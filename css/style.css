@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #640257;
-    --secondary: #b718c5;
+    --secondary: #fcae07;
     --light: #F7FAFF;
     --dark: #1D1D27;
 }
@@ -99,7 +99,7 @@ h6,
     color: var(--secondary) !important;
 }
 
-.navbar-light .navbar-brand h1 {
+.navbar-light .navbar-brand h2 {
     color: #FFFFFF;
 }
 
