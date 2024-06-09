@@ -368,7 +368,120 @@ h6,
 .testimonial-carousel .owl-item.center .testimonial-item h6 {
     color: var(--dark) !important;
 }
+/** Roadmap **/
+.roadmap {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #007bff;
+    left: 50%;
+    margin-left: -2px;
+}
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+}
+.timeline-item::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.timeline-item .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -25px;
+    background: #007bff;
+    border-radius: 50%;
+    z-index: 100;
+}
+.timeline-panel {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.timeline-panel::before {
+    content: '';
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    display: block;
+    width: 0;
+}
+.timeline-item.left .timeline-panel {
+    float: left;
+}
+.timeline-item.left .timeline-panel::before {
+    right: auto;
+    left: -15px;
+    border-left-width: 0;
+    border-right: 15px solid #fff;
+}
+.timeline-item.right .timeline-panel {
+    float: right;
+}
+.timeline-item.right .timeline-panel::before {
+    left: auto;
+    right: -15px;
+}
+.timeline-title {
+    margin-top: 0;
+    color: #007bff;
+}
+.timeline-body p, .timeline-body ul {
+    margin-bottom: 0;
+}
+.timeline-body ul {
+    padding-left: 20px;
+}
+.timeline-body ul li {
+    margin-bottom: 10px;
+}
 
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+        margin-left: 0;
+    }
+    .timeline-item {
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+    .timeline-panel {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 60px;
+    }
+    .timeline-badge {
+        left: 0;
+        margin-left: 0;
+    }
+}
 
 /*** Team ***/
 .team-item {
