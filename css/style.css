@@ -384,7 +384,7 @@ h6,
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #007bff;
+    background: #640257;
     left: 50%;
     margin-left: -2px;
 }
@@ -408,7 +408,7 @@ h6,
     top: 20px;
     left: 50%;
     margin-left: -25px;
-    background: #007bff;
+    background: #640257;
     border-radius: 50%;
     z-index: 100;
 }
@@ -449,7 +449,7 @@ h6,
 }
 .timeline-title {
     margin-top: 0;
-    color: #007bff;
+    color: #640257;
 }
 .timeline-body p, .timeline-body ul {
     margin-bottom: 0;
