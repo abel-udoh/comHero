@@ -78,6 +78,15 @@ h6,
     border-radius: 50px;
 }
 
+.custom-link {
+    color: white; 
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: #543cbe;
+}
+
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
