@@ -230,6 +230,45 @@
         <!-- Service End -->
 </section>
 
+<!-- Token Sale Start -->
+<section id="Token">
+   <div class="container-xxl bg-primary py-5 my-5">
+        <div class="container py-5 text-white">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6" style="color: #ffffff;">Token Launch Countdown</h1>
+                <p class="text-primary fs-5 mb-5 text-white">27th June, 2024. Time: CEST 11PM</p>
+            </div>
+            <div class="row g-3" id="countdown">
+                <div class="col-6 col-md-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0" style="color: #050126;">0</h1>
+                        <span class="text-primary fs-5">Days</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0" style="color: #050126;">0</h1>
+                        <span class="text-primary fs-5">Hours</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0" style="color: #050126;">0</h1>
+                        <span class="text-primary fs-5">Minutes</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0" style="color: #050126;">0</h1>
+                        <span class="text-primary fs-5">Seconds</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- Token Sale Start -->
+
 <section id="portfolioSec">
         <!-- Portfolio Start -->
         <div class="container-xxl py-5">
@@ -360,6 +399,61 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+        <script>
+        // Set the date we're counting down to (replace with your desired end date and time)
+        const countDownDate = new Date("June 27, 2024 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const x = setInterval(function() {
+
+            // Get the current date and time
+            const now = new Date().getTime();
+
+            // Calculate the remaining time
+            const distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Update the HTML elements with the calculated values
+            document.getElementById("countdown").innerHTML = `
+                <div class="col-6 col-md-3" data-wow-delay="0.1s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0" style="color: #050126;">${days}</h1>
+                        <span class="text-primary fs-5">Days</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-wow-delay="0.3s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0" style="color: #050126;">${hours}</h1>
+                        <span class="text-primary fs-5">Hours</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-wow-delay="0.5s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0" style="color: #050126;">${minutes}</h1>
+                        <span class="text-primary fs-5">Minutes</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-wow-delay="0.7s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0" style="color: #050126;">${seconds}</h1>
+                        <span class="text-primary fs-5">Seconds</span>
+                    </div>
+                </div>
+            `;
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "ON SALE SOON";
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>

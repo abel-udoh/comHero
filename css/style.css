@@ -592,6 +592,10 @@ h6,
     opacity: 1;
     transition-delay: .15s;
 }
+.tokenlaunch {
+    background: url(../img/tokenlaunch.png) center center no-repeat;
+    background-size: contain;
+}
 
 
 /*** Footer ***/
