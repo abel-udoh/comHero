@@ -77,7 +77,6 @@ h6,
     font-weight: normal;
     border-radius: 50px;
 }
-
 .custom-link {
     color: white; 
     text-decoration: none;
@@ -86,7 +85,36 @@ h6,
 .custom-link:hover {
     color: #543cbe;
 }
+/* Responsive styles */
+        @media (max-width: 576px) {
+            .custom-link {
+                color: white;
+            }
 
+            .custom-link:hover {
+                color: #543cbe;
+            }
+        }
+
+        @media (min-width: 577px) and (max-width: 768px) {
+            .custom-link {
+                color: white;
+            }
+
+            .custom-link:hover {
+                color: #543cbe;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .custom-link {
+                color: white;
+            }
+
+            .custom-link:hover {
+                color: #543cbe;
+            }
+        }
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
@@ -333,13 +361,6 @@ h6,
     width: 100%;
     background: var(--light);
 }
-
-.justified-text {
-    text-align: justify;
-    hyphens: auto;
-    word-spacing: -0.13em
-}
-
 
 /*** Testimonial ***/
 .newsletter {
@@ -598,15 +619,7 @@ h6,
     opacity: 1;
     transition-delay: .15s;
 }
-.tokenlaunch {
-    background: url(../img/tokenlaunch.png) center center no-repeat;
-    background-size: contain;
-}
 
-.portfolio-image {
-    height: 300px; /* Set a uniform height */
-    object-fit: cover; /* Ensure the image covers the area without distorting */
-}
 
 /*** Footer ***/
 .footer {
