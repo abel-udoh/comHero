@@ -334,6 +334,12 @@ h6,
     background: var(--light);
 }
 
+.justified-text {
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: -0.13em
+}
+
 
 /*** Testimonial ***/
 .newsletter {
@@ -597,6 +603,10 @@ h6,
     background-size: contain;
 }
 
+.portfolio-image {
+    height: 300px; /* Set a uniform height */
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+}
 
 /*** Footer ***/
 .footer {
